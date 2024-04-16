@@ -41,18 +41,18 @@ Ranks the models based on their performance scores.
 Conclusion:
 predicts stress and diabetes while using touch screens by applying different machine-learning techniques. In this work, machine learning techniques logistic regression, XG boost, and random forest algorithms were used to predict stress and diabetes using the touch screen. ​
 The result will give accurate results on how humans suffer from working prolonged hours with touch screens. The study systematically explores data, builds multiple predictive models, and assesses their accuracy for predicting diabetes and stress. ​
-The logistic regression predicts that people experience stress while using the touch screen for prolonged hours which leads to chronic diabate retinotherapy. ​
+The logistic regression predicts that people experience stress while using the touch screen for prolonged hours which leads to chronic diabetics retinotherapy. ​
 The project systematically explores data, builds multiple predictive models, and assesses their accuracy for predicting diabetes and stress. The best-performing models are XGBoost and Random Forest for both 'Diabetes' and 'Stress' predictions, exhibiting accuracy scores of 0.86 and 0.76, respectively.
 
 Description of Project:
 The growing use of digital gadgets has detrimental effects on both physical and mental well-being. Prolonged and consistent exposure may heighten stress levels, provoke anxiety, and disrupt sleep patterns, ultimately resulting in obesity, cardiovascular ailments, hypertension, impaired stress control, reduced levels of HDL cholesterol, and insulin resistance.​
-Psychological consequences include suicide ideation, depressive symptoms, impaired sleep, and negativity impacted by content. Relying on digital devices may lead to heightened arousal, elevated levels of stress hormones, and impede mental vitality and growt​
+Psychological consequences include suicide ideation, depressive symptoms, impaired sleep, and negativity impacted by content. Relying on digital devices may lead to heightened arousal, elevated levels of stress hormones, and impede mental vitality and growt​h
 This work used machine learning algorithms to forecast the occurrence of diabetes associated with stress in individuals who use touch screens. In this work, three models, namely RF (Random Forest), LR (Logistic Regression), and XG Boosting, were evaluated. ​
 The algorithms were trained using two datasets, which included measurements of glucose, insulin, blood pressure, BMI, stress, and age. The algorithms' accuracy was evaluated using performance measures. Users may retrieve the information to anticipate stress and diabetes by using touch-screen devices.​
 
 Stress disorders are a common issue among working IT professionals in the industry today. With changing lifestyle and work cultures, there is an increase in the risk of stress among the employees. Though many industries and corporates provide mental health related schemes and try to ease the workplace atmosphere, the issue is far from control. In this paper, we would like to apply machine learning techniques to analyze stress patterns in working adults and to narrow down the factors that strongly determine the stress levels. Towards this, data from the OSMI mental health survey 2017 responses of working professionals within the tech-industry was considered. Various Machine Learning techniques were applied to train our model after due data cleaning and preprocessing. The accuracy of the above models was obtained and studied comparatively. Boosting had the highest accuracy among the models implemented. By using Decision Trees, prominent features that influence stress were identified as gender, family history and availability of health benefits in the workplace. With these results, industries can now narrow down their approach to reduce stress and create a much comfortable workplace for their employees.
 
-One of the new global concerns to public health is diabetes. The World Health Organisation (WHO) predicts that diabetes will rank as the seventh leading cause of death by 2030 (WHO, Diabetes, 2020). Depending on the ophthalmologist's experience, the diagnostic process can be difficult or time-consuming, especially in environments with limited resources. Automated techniques are currently used to classify cases of Diabetes Retinopathy (DR). This study aims to offer an automated DR detection system based on preprocessing, feature extraction, and classification procedures. Deep Convolutional Neural Networks (DCNN) and Machine Learning (ML) approaches are applied.
+One of the new global concerns to public health is diabetes. The World Health Organization (WHO) predicts that diabetes will rank as the seventh leading cause of death by 2030 (WHO, Diabetes, 2020). Depending on the ophthalmologist's experience, the diagnostic process can be difficult or time-consuming, especially in environments with limited resources. Automated techniques are currently used to classify cases of Diabetes Retinopathy (DR). This study aims to offer an automated DR detection system based on preprocessing, feature extraction, and classification procedures. Deep Convolutional Neural Networks (DCNN) and Machine Learning (ML) approaches are applied.
 About 62 million people in the Americas (422 million people worldwide) have diabetes, the majority living in low-and middle-income countries, and 284,049 deaths (1.5 million globally) are directly attributed to diabetes each year. Both the number of cases and the prevalence of diabetes have been steadily increasing over the past few decades.
 It is estimated that 62 million people in the Americas live with Diabetes Mellitus (DM) type2. This number has tripled in the Region since 1980 and it estimates that will reach the 109 million mark by 2040, according to the Diabetes Atlas (9th edition). Prevalence has been rising more rapidly in low- and middle-income countries than in high-income countries.
 Diabetes is a major cause of blindness, kidney failure, heart attacks, stroke and lower limb amputation. Poorly controlled diabetes increases the chances of these complications and premature mortality. In addition, people with diabetes are at higher risk of presenting cardiovascular diseases and tuberculosis, especially those with poor glycemic control.Globally, between 2000 and 2016, there was a 5% increase in premature mortality from diabetes.
@@ -100,7 +100,7 @@ Assumption of Logistic Regression:
 *linear relationship b/w independent variable and dependent variable
 
 How does Logistic Regression Work:
-the logistic regression model transform the linear regression functions continous value output into categorical value output using sigmoid function which maps the any real-valued set of independent variables input into a value b/w 0 and 1.this function is known as the logistic function.
+the logistic regression model transform the linear regression functions continuous value output into categorical value output using sigmoid function which maps the any real-valued set of independent variables input into a value b/w 0 and 1.this function is known as the logistic function.
 
 TP=true positives,TN=true negatives,FP=false positives,FN=false negatives
 
@@ -118,11 +118,11 @@ TP=true positives,TN=true negatives,FP=false positives,FN=false negatives
 
 ->F1 Score:harmonic mean of precision and recall
 
-->f1 score=2*precision*recall/(precision+recall)
+->f1 score=2*(precision*recall)/(precision+recall)
 
 logistic function to convert the output into a probability score
 
-Linear and logistic have the difference of linear is measures continous outcome.And logistic function map predicted values b/w 0 and 1.
+Linear and logistic have the difference of linear is measures continuous outcome.And logistic function map predicted values b/w 0 and 1.
 
 Random Forest algorithm is a powerful tree learning technique in Machine Learning. It works by creating a number of Decision Trees during the training phase. Each tree is constructed using a random subset of the data set to measure a random subset of features in each partition. This randomness introduces variability among individual trees, reducing the risk of overfitting and improving overall prediction performance. In prediction, the algorithm aggregates the results of all trees, either by voting (for classification tasks) or by averaging (for regression tasks) This collaborative decision-making process, supported by multiple trees with their insights, provides an example stable and precise results. Random forests are widely used for classification and regression functions, which are known for their ability to handle complex data, reduce overfitting, and provide reliable forecasts in different environments.
 
