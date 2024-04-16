@@ -18,20 +18,25 @@ Data Loading and Exploration:
 Imports necessary libraries and loads the dataset ('projects.csv').
 Prints 'success' after successful data loading.
 Displays basic information about the dataset and explores the target variables ('Diabetes', 'Stress').
+
 Data Visualization:
 Uses various visualization techniques like histograms, pair plots, heatmaps, etc., to understand the distribution, relationships, and correlations among features and target variables.
 Utilizes seaborn and matplotlib for graphical representation.
+
 Features Extraction and Model Building:
 Prepares the data by separating features (X) and target variables (Y) for both 'Diabetes' and 'Stress' predictions.
 Initiates and fits different classification models: Logistic Regression, Extra Trees Classifier, XGBoost, and Random Forest.
 Assesses the feature importances using Extra Trees Classifier to understand significant predictors.
+
 Model Evaluation:
 Splits the data into training and testing sets using train_test_split.
 Evaluates the models' performances using accuracy_score.
 Generates a results DataFrame showcasing the accuracy scores for each model.
-Results and Conclusion:
+
+Results Of the Project:
 Displays the accuracy scores achieved by each model for predicting 'Diabetes' and 'Stress'.
 Ranks the models based on their performance scores.
+
 Conclusion:
 predicts stress and diabetes while using touch screens by applying different machine-learning techniques. In this work, machine learning techniques logistic regression, XG boost, and random forest algorithms were used to predict stress and diabetes using the touch screen. ​
 The result will give accurate results on how humans suffer from working prolonged hours with touch screens. The study systematically explores data, builds multiple predictive models, and assesses their accuracy for predicting diabetes and stress. ​
