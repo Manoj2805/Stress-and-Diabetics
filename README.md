@@ -85,4 +85,66 @@ The Study aims to predict the presence of diabetes and stress using machine lear
 Prolonged exposure to screens, whether for leisure or work purposes, may lead to permanent injury in humans. Research indicates the negative effects of stress-related diabetes. Furthermore, with the progress of technology, people are becoming more immersed in the digital realm without their explicit agreement. Collecting and organizing more touch screen data from users with diabetes and DR, as well as their clinical and psychological assessments, to create a large and diverse dataset for training and testing the predictive models.​
 Data is collected from freely available Kaggle and two datasets based on stress and diabetic retina therapy can use various sensors and devices to collect touch screen data from users, such as the frequency, duration, intensity, location, direction, speed, patterns, errors, corrections, usage, and context of touch interactions. ​
 
+logistic regression is used for binary classification where we use the sigmoid function that takes input as independent variables and produces a probability value b/w 0 and 1.Sigmoid function is a mathematical function used to map the predicted values to probabilites.
+
+Assumption of Logistic Regression:
+*Independent observations
+*No outliers in the dataset
+*Large sample size
+*Binary dependent variable
+*linear relationship b/w independent variable and dependent variable
+
+How does Logistic Regression Work:
+the logistic regression model transform the linear regression functions continous value output into categorical value output using sigmoid function which maps the any real-valued set of independent variables input into a value b/w 0 and 1.this function is known as the logistic function.
+
+TP=true positives,TN=true negatives,FP=false positives,FN=false negatives
+
+->Accuracy: it provides the proportion of correctly classified Instance 
+->Accuracy=(TP+TN)/Total
+
+->precision(p):Focuses on the accuracy of positive predictions
+->p=TP/(TP+FP)
+
+->Recall:It measures the correctly predicted positive instances among all actual positives instances.
+->recall=TP/(TP+FN)
+
+->F1 Score:harmonic mean of precision and recall
+->f1 score=2*precision*recall/(precision+recall)
+logistic function to convert the output into a probability score
+Linear and logistic have the difference of linear is measures continous outcome.And logistic function map predicted values b/w 0 and 1.
+
 Random Forest algorithm is a powerful tree learning technique in Machine Learning. It works by creating a number of Decision Trees during the training phase. Each tree is constructed using a random subset of the data set to measure a random subset of features in each partition. This randomness introduces variability among individual trees, reducing the risk of overfitting and improving overall prediction performance. In prediction, the algorithm aggregates the results of all trees, either by voting (for classification tasks) or by averaging (for regression tasks) This collaborative decision-making process, supported by multiple trees with their insights, provides an example stable and precise results. Random forests are widely used for classification and regression functions, which are known for their ability to handle complex data, reduce overfitting, and provide reliable forecasts in different environments.
+bagging: where weak model are trained on different subsets of the trained data.each subset is sampled with replacement and prediction
+boosting: in each model tries to correct the errors made by the previous models
+each models is trained on a modified version of the dataset the instances that were misused by the previous models are given more weight the final prediction is made by weighted voting.
+
+Key features of Random forest:
+*high predictive accuracy
+*large dataset handling
+*handling missing value
+*parallelization for speed
+*addressing imbalanced data(adjusting class weight (or) resampling methods to ensure a balanced representation during training)
+
+xgboost:It is the optimized distributed gradient boosting library designed for efficient and scalable training of ml models
+It is an ensemble learning method that combines the predicted of multiple weak models to produce a stronger prediction.It will handle large datasets in many machine-Learning tasks such as classification and Regression
+It will have efficient handling of missing values.it possible to train models on large dataset in a resonable amount of time.
+output:
+Diabetes->0,1
+stress->1,2,3,4
+Advantage:
+Performance,scalability,handling of missing value
+disadvantage:
+computation complexity,Memory Requirement.
+
+Knn:K-Nearest Neighbour is one of the simplest Machine Learning algorithms based on Supervised Learning technique.
+K-NN algorithm assumes the similarity between the new case/data and available cases and put the new case into the category that is most similar to the available categories.
+K-NN algorithm stores all the available data and classifies a new data point based on the similarity. This means when new data appears then it can be easily classified into a well suite category by using K- NN algorithm.
+K-NN algorithm can be used for Regression as well as for Classification but mostly it is used for the Classification problems.K-NN is a non-parametric algorithm, which means it does not make any assumption on underlying data.
+It is also called a lazy learner algorithm because it does not learn from the training set immediately instead it stores the dataset and at the time of classification, it performs an action on the dataset.
+KNN algorithm at the training phase just stores the dataset and when it gets new data, then it classifies that data into a category that is much similar to the new data.
+
+*data is collected from the various sensors and devices to collect touch screen data from users.
+*The person posts,stories,feeds of social media platform...etc data to help to predict the emotion of the people also.
+*The dataset is prepared according to the usage of the Touch Screen data 
+
+Compare to the other model accuracy xgboost is the best model because of ensemble learning and efficiently handles the missing values in the dataset.
