@@ -14,6 +14,7 @@ Early detection and effective management of stress are crucial in preventing its
 This paper presents a method to predict expressions of stress and Diabetic retinopathy by using ML techniques LR (logistic regression), RF ( random forest), and XG boost methods to detect the correlation between stress and diabetes while using touch screen. ​
 
 Steps:
+
 Data Loading and Exploration:
 Imports necessary libraries and loads the dataset ('projects.csv').
 Prints 'success' after successful data loading.
