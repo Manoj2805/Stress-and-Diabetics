@@ -89,6 +89,7 @@ logistic regression is used for binary classification where we use the sigmoid f
 
 Assumption of Logistic Regression:
 *Independent observations
+
 *No outliers in the dataset
 *Large sample size
 *Binary dependent variable
